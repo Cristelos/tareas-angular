@@ -1,0 +1,20 @@
+<p>Lista entera</p>
+<ul>
+    <li *ngFor="let item of todo">{{item.name}}</li>
+</ul>
+
+<p>Lista con elementos true</p>
+
+<ul>
+    <ng-container *ngFor="let item of todo">
+        <li *ngIf="item.isDone">{{item.name}}</li>
+    </ng-container>
+</ul>
+
+<p>Lista con elementos true + clase</p>
+
+<ul>
+    <ng-container *ngFor="let item of todo">
+        <li [ngClass]="item.isDone == true ? 'done' : 'pending'">{{item.name}}</li>
+    </ng-container>
+</ul>
