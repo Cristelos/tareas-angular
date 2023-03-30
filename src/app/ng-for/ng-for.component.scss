@@ -1,11 +1,8 @@
-// .isDone{
-//     background-color: red;
-//     padding: 10px;
-//     color:white;
-// }
+.pending {
+    color: red;
+}
 
-.item.isDone{
-    background-color: red;
-    padding: 10px;
-    color:white;
+.done {
+    color: green;
+    text-decoration: line-through;
 }

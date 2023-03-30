@@ -15,6 +15,7 @@
 
 <ul>
     <ng-container *ngFor="let item of todo">
-        <li [ngClass]="item.isDone == true ? 'done' : 'pending'">{{item.name}}</li>
+        <li [ngClass]="item.isDone == true ? 'done' : 'pending'" >{{item.name}} = {{item.isDone}}</li>
+        <button (click)="cambiaDone(item)">Cambia</button>
     </ng-container>
 </ul>

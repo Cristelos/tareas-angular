@@ -7,4 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class NgForComponent {
   @Input() todo!: any;
+
+  cambiaDone(item: any) {
+    item.isDone = !item.isDone
+  }
 }
